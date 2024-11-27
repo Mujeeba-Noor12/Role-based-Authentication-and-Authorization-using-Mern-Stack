@@ -1,0 +1,163 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff, #fff, #fff);
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-card {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-image {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.register-form {
+  flex: 1;
+  padding: 30px;
+}
+
+.register-header h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.register-header p {
+  font-size: 14px;
+  text-align: center;
+  color: #9e9e9e;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper .input-icon {
+  position: absolute;
+  left: 15px;
+  color: #007bb5;
+  font-size: 18px;
+}
+
+input {
+  width: 90%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  appearance: none;
+  background: transparent url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 width=%2216%22 height=%2216%22%3E%3Cpath fill=%22%23ccc%22 d=%22M4.293 5.293a1 1 0 011.414 0L8 7.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z%22 /%3E%3C/svg%3E') no-repeat right 5px center;
+  background-size: 22px;
+}
+
+input:focus {
+  border-color: skyblue;
+  box-shadow: 0 0 5px rgba(58, 145, 180, 0.5);
+}
+
+.submit-btn {
+  width: 30%;
+  padding: 12px 0;
+  background: #007bb5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: #007bb5;
+}
+
+.submit-btn:disabled {
+  background: #cce7f8;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.success {
+  color: #27ae60;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+      flex-direction: column;
+  }
+
+  .register-image {
+      height: 200px;
+  }
+}
+
+.input-wrapper .toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #999;
+}
+
+.toggle-password:hover {
+  color: #333;
+}

@@ -1,0 +1,154 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff, #ffff, #fff);
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-image {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.login-form {
+  flex: 1;
+  padding: 30px;
+}
+
+.login-header h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.login-header p {
+  font-size: 14px;
+  text-align: center;
+  color: #9e9e9e;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: skyblue;
+  box-shadow: 0 0 5px rgba(58, 145, 180, 0.5);
+}
+
+.submit-btn {
+  width: 30%;
+  padding: 12px 0;
+  background: #007bb5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  transition: background 0.3s ease;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #27ae60;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.signup-text {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.signup-text a {
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+      flex-direction: column;
+  }
+  .login-image {
+      height: 200px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #007bb5;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: skyblue;
+  box-shadow: 0 0 5px rgba(58, 145, 180, 0.5);
+}
