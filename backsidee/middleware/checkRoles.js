@@ -17,7 +17,7 @@ const checkRoles = (requiredRole) => {
       req.user = decoded; 
 
       if (req.user.role !== requiredRole) {
-        return res.status(403).json({ message: 'Forbidden: You do not have access to this resource' }); // Role mismatch
+        return res.status(403).json({ message: 'Forbidden: You do not have access to this resource' }); 
       }
 
       next(); 
